@@ -1,7 +1,8 @@
-/* .hello {
+.hello {
   color: red;
-} */
+}
 
 body {
   background-color: bisque;
+  /* color: green; */
 }
