@@ -1,6 +1,25 @@
 import _ from 'lodash';
 import './style.css';
 
+let list = [
+  {
+    description: 'Wake up at 6',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Pray',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Make breakfast',
+    completed: false,
+    index: 3,
+  },
+];
+
+
 
 function component() {
   const element = document.createElement('div');
