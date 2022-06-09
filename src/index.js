@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 
-let list = [
+const list = [
   {
     description: 'Wake up at 6',
     completed: false,
@@ -19,39 +19,16 @@ let list = [
   },
 ];
 
+const listContainer = document.querySelector('#list');
 
+const loader = () =>{
+  list.forEach((task) => {
+    listContainer.innerHTML += `
+    <li>
+      <input type="checkbox">
+      <p>${task.description}</p>
+    </li>`;
+  });
+};
 
-function component() {
-  const element = document.createElement('div');
-  // const btn = document.createElement('button');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  // btn.innerHTML = 'Click me and check the console!';
-  // btn.onclick = printMe;
-
-  // element.appendChild(btn);
-  return element;
-}
-
-document.body.appendChild(component());
-// import _ from 'lodash';
-// import printMe from './print.js';
-
-//  function component() {
-//    const element = document.createElement('div');
-//   const btn = document.createElement('button');
-
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-//   btn.innerHTML = 'Click me and check the console!';
-//   btn.onclick = printMe;
-
-//   element.appendChild(btn);
-
-//    return element;
-//  }
-
-//  document.body.appendChild(component());
+loader();
