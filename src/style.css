@@ -1,8 +1,10 @@
-.hello {
-  color: red;
+body {
+  background-color: gray;
 }
 
-body {
-  background-color: bisque;
-  /* color: green; */
+main{
+  width: 90%;
+  height: 90%;
+  background: #fff;
+  margin: auto;
 }
