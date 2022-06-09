@@ -1,7 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,5 +30,14 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farida-Hamid/T0-Do-List.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Farida-Hamid/T0-Do-List/issues"
+  },
+  "homepage": "https://github.com/Farida-Hamid/T0-Do-List#readme"
 }
