@@ -2,9 +2,33 @@ body {
   background-color: gray;
 }
 
-main{
-  width: 90%;
-  height: 90%;
+main {
+  width: 80%;
+  height: 80%;
   background: #fff;
   margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: 100;
+  color: gray;
+  font-style: italic;
+}
+
+li {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: darkgray;
 }
