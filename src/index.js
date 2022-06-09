@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 
 const list = [
@@ -21,7 +20,7 @@ const list = [
 
 const listContainer = document.querySelector('#list');
 
-const loader = () =>{
+const loader = () => {
   list.forEach((task) => {
     listContainer.innerHTML += `
     <li>
