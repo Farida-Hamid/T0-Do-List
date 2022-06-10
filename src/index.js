@@ -34,6 +34,12 @@ adder.addEventListener("keypress", (e)=> {
     if (e.key === 'Enter' && adder.value) {
       console.log("entered");
       console.log(adder.value);
-      list.add(adder.value);
+      const task = {
+        description: adder.value,
+        completed: false,
+        index: list.length,
+      };
+      list.add(task);
+      list.display(task);
     }
   });

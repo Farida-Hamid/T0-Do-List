@@ -19,28 +19,25 @@ export default class Tasks {
     return this.list;
   }
 
-  loader = () => {
+  display = (task) => {
     const listContainer = document.querySelector('#list');
+
+    listContainer.innerHTML += `
+    <li>
+      <input type="checkbox">
+      <p>${task.description}</p>
+    </li>`;
+  }
+
+  loader = () => {
     console.log("I want to load", this.list);
     if(this.list.length > 0) {
-      this.list.forEach((task) => {
-        listContainer.innerHTML += `
-        <li>
-          <input type="checkbox">
-          <p>${task.description}</p>
-        </li>`;
-      });
+      this.list.forEach((task) => this.display(task));
     }
     else{console.log("nothing to load");}
   }
   
-  add = (desc) => {
-    const task = {
-      description: desc,
-      completed: false,
-      index: this.list.length,
-    };
-    
+  add = (task) => {
     this.list.push(task);
     localStorage.setItem('memory', JSON.stringify(this.list));
   }
