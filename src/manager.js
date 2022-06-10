@@ -13,6 +13,9 @@ export default class Tasks {
     }
     return list;
   }
-
   
+  add = (task) => {
+    this.list.push(task);
+    localStorage.setItem('memory', JSON.stringify(this.list));
+  }
 }
