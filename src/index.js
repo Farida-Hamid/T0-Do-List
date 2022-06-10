@@ -1,39 +1,33 @@
-import _ from 'lodash';
-// import printMe from './print.js';
 import './style.css';
 
+const list = [
+  {
+    description: 'Wake up at 6',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Pray',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Make breakfast',
+    completed: false,
+    index: 3,
+  },
+];
 
-function component() {
-  const element = document.createElement('div');
-  // const btn = document.createElement('button');
+const listContainer = document.querySelector('#list');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const loader = () => {
+  list.forEach((task) => {
+    listContainer.innerHTML += `
+    <li>
+      <input type="checkbox">
+      <p>${task.description}</p>
+    </li>`;
+  });
+};
 
-  // btn.innerHTML = 'Click me and check the console!';
-  // btn.onclick = printMe;
-
-  // element.appendChild(btn);
-  return element;
-}
-
-document.body.appendChild(component());
-// import _ from 'lodash';
-// import printMe from './print.js';
-
-//  function component() {
-//    const element = document.createElement('div');
-//   const btn = document.createElement('button');
-
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-//   btn.innerHTML = 'Click me and check the console!';
-//   btn.onclick = printMe;
-
-//   element.appendChild(btn);
-
-//    return element;
-//  }
-
-//  document.body.appendChild(component());
+loader();
