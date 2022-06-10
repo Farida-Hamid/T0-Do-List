@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-To get a local clone this repository.
+To get a local clone this repository. You can run the project by double clicking on the file [dist/index.html].
 
 ### Prerequisites
 

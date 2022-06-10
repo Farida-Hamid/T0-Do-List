@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
+    mode: 'development',
   },
   devServer: {
     static: './dist',
@@ -14,7 +15,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
+    "filename": "[name].js",
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
