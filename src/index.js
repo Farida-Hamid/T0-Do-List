@@ -20,17 +20,20 @@ import Tasks from './tasks-manager.js';
 // ];
 
 let list = new Tasks();
+console.log("list = ", list);
+console.log('loading');
+list.loader();
+console.log('loaded');
 
-const listContainer = document.querySelector('#list');
+const adder = document.getElementById("new-task");
+console.log(adder);
 
-const loader = () => {
-  list.forEach((task) => {
-    listContainer.innerHTML += `
-    <li>
-      <input type="checkbox">
-      <p>${task.description}</p>
-    </li>`;
+adder.addEventListener("keypress", (e)=> {
+  // e.preventDefault();
+  console.log("here");
+    if (e.key === 'Enter' && adder.value) {
+      console.log("entered");
+      console.log(adder.value);
+      list.add(adder.value);
+    }
   });
-};
-
-loader();
