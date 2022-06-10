@@ -10,7 +10,7 @@ main {
   padding: 20px;
 }
 
-h2 {
+#new-task {
   font-weight: 100;
   color: gray;
   font-style: italic;
