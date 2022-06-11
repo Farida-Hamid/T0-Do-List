@@ -20,7 +20,7 @@ export default class Tasks {
 
     listContainer.innerHTML += `
     <li>
-      <input type="checkbox" id="done">
+      <input type="checkbox" class="change" id="done">
       <input class="content" type="text" value="${task.description}">
       <button class="delete" onclick="delete(task)">X</button>
     </li>`;

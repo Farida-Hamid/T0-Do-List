@@ -42,3 +42,8 @@ button {
 .delete {
   width: fit-content;
 }
+
+.finished {
+  background: chartreuse;
+  text-decoration: line-through;
+}

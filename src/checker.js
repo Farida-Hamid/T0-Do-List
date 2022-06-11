@@ -12,6 +12,9 @@ export const clearScreen = (list) => {
   const clear = document.querySelector('#clear');
   clear.addEventListener('click', () => {
     list = list.filter((item) => item.completed === false);
+    for (let i = 0; i < list.length; i += 1) {
+      list[i].index = i;
+    }
     localStorage.setItem('memory', JSON.stringify(list));
     location.reload();
   });
