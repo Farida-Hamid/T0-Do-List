@@ -1,6 +1,5 @@
 import './style.css';
 import Tasks from './tasks-manager.js';
-// import Check from './checker';
 
 const list = new Tasks();
 list.loader();
@@ -13,8 +12,3 @@ adder.addEventListener('keypress', (e) => {
     adder.value = '';
   }
 });
-
-// const checker = new Check();
-// console.log('check = ', checker);
-// checker.clearScreen();
-// checker.completeTask();
