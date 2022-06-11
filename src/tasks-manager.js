@@ -69,7 +69,6 @@ export default class Tasks {
     this.list.splice(index, 1);
     for (let i = 0; i < this.list.length; i += 1) {
       this.list[i].index = i;
-      console.log("task", this.list[i], i, this.list[i].index);
     }
     localStorage.setItem('memory', JSON.stringify(this.list));
 

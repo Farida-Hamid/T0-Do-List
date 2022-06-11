@@ -20,10 +20,17 @@ li {
   display: flex;
   gap: 20px;
   padding: 10px;
+  align-items: center;
 }
 
-content {
+input {
+  border: none;
+
+}
+
+.content {
   margin: 0;
+  width: 90%;
 }
 
 button {
