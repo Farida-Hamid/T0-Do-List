@@ -43,3 +43,14 @@ adder.addEventListener("keypress", (e)=> {
       list.display(task);
     }
   });
+
+  console.log("I started");
+  const checkbox = document.querySelector("#done");
+
+checkbox.addEventListener('change', function() {
+if (task.checked) {
+  console.log("Checkbox is checked..");
+} else {
+  console.log("Checkbox is not checked..");
+}
+});

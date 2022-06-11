@@ -1,3 +1,5 @@
+import { forEach } from "lodash";
+
 export default class Tasks {
   constructor () {
   //   this.list = [];
@@ -24,8 +26,9 @@ export default class Tasks {
 
     listContainer.innerHTML += `
     <li>
-      <input type="checkbox">
+      <input type="checkbox" id="done">
       <p>${task.description}</p>
+      <button class="delete">X</button>
     </li>`;
   }
 
@@ -40,5 +43,14 @@ export default class Tasks {
   add = (task) => {
     this.list.push(task);
     localStorage.setItem('memory', JSON.stringify(this.list));
+  }
+
+  delete = (item) => {
+    this.list.forEach((task, index) =>{
+      if(task.description === item.description) {
+        this.list.remove(index);
+        //remove from display
+      }
+    });
   }
 }
