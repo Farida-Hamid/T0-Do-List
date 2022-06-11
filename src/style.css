@@ -44,6 +44,6 @@ button {
 }
 
 .finished {
-  background: chartreuse;
+  color: gray;
   text-decoration: line-through;
 }

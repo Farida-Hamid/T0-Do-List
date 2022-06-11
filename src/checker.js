@@ -2,6 +2,8 @@ export const completeTask = (list) => {
   const boxs = document.querySelectorAll('#done');
   boxs.forEach((box, index) => {
     box.addEventListener('click', () => {
+      const change = document.querySelectorAll('.change');
+      change[index].classList.toggle('finished');
       list[index].completed = !list[index].completed;
       localStorage.setItem('memory', JSON.stringify(list));
     });
@@ -16,6 +18,6 @@ export const clearScreen = (list) => {
       list[i].index = i;
     }
     localStorage.setItem('memory', JSON.stringify(list));
-    location.reload();
+    window.location.reload();
   });
 };
