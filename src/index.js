@@ -5,7 +5,6 @@ let list = new Tasks();
 list.loader();
 
 const adder = document.getElementById("new-task");
-console.log(adder);
 
 adder.addEventListener("keypress", (e)=> {
 
@@ -18,4 +17,7 @@ adder.addEventListener("keypress", (e)=> {
       list.add(task);
       list.display(task);
     }
-  });
+});
+
+// console.log('deleting');
+// list.delete();

@@ -20,7 +20,7 @@ export default class Tasks {
     <li>
       <input type="checkbox" id="done">
       <p>${task.description}</p>
-      <button class="delete">X</button>
+      <button class="delete" onclick="delete(task)">X</button>
     </li>`;
   }
 
@@ -28,6 +28,14 @@ export default class Tasks {
     if(this.list.length > 0) {
       this.list.forEach((task) => this.display(task));
     }
+
+    const del = document.querySelectorAll('.delete');
+
+    del.forEach((task, index) => {
+      task.addEventListener('click', () => {
+        this.delete(index);
+      });
+    });
   }
   
   add = (task) => {
@@ -35,12 +43,14 @@ export default class Tasks {
     localStorage.setItem('memory', JSON.stringify(this.list));
   }
 
-  delete = (item) => {
-    this.list.forEach((task, index) =>{
-      if(task.description === item.description) {
-        this.list.remove(index);
-        //remove from display
-      }
-    });
+  delete = (index) => {
+    console.log('in delete')
+    this.list.splice(index, 1);
+    for (let i = 0; i < this.list.length; i += 1) {
+      console.log("task", this.list[i], i, this.list[i].index);
+    }
+    localStorage.setItem('memory', JSON.stringify(this.list));
+    // e.target.parentElement.remove();
+    // this.loader();
   }
 }
