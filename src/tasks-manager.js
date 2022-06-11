@@ -1,3 +1,5 @@
+import {completeTask} from './checker.js';
+
 export default class Tasks {
   constructor() {
     this.list = this.get();
@@ -52,6 +54,7 @@ export default class Tasks {
         }
       });
     });
+    completeTask(this.list);
   }
 
   add = (value) => {
