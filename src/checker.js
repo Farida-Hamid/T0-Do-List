@@ -13,5 +13,7 @@ export const clearScreen = (list) => {
   clear.addEventListener('click', () => {
     list = list.filter((item) => item.completed === false);
     localStorage.setItem('memory', JSON.stringify([]));
+    const listContainer = document.querySelector('#list');
+    listContainer.innerHTML = '';
   });
 }
