@@ -6,7 +6,7 @@ export const completeTask = (list) => {
       localStorage.setItem('memory', JSON.stringify(list));
     });
   });
-}
+};
 
 export const clearScreen = (list) => {
   const clear = document.querySelector('#clear');
@@ -16,4 +16,4 @@ export const clearScreen = (list) => {
     const listContainer = document.querySelector('#list');
     listContainer.innerHTML = '';
   });
-}
+};

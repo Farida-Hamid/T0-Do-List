@@ -1,4 +1,4 @@
-import {completeTask, clearScreen} from './checker.js';
+import { completeTask, clearScreen } from './checker.js';
 
 export default class Tasks {
   constructor() {
@@ -54,7 +54,6 @@ export default class Tasks {
         }
       });
     });
-    
     completeTask(this.list);
     clearScreen(this.list);
   }
