@@ -25,7 +25,6 @@ li {
 
 input {
   border: none;
-
 }
 
 .content {
@@ -41,5 +40,5 @@ button {
 }
 
 .delete {
-  width: fit-content;  
+  width: fit-content;
 }

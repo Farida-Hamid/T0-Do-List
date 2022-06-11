@@ -1,13 +1,13 @@
 import './style.css';
 import Tasks from './tasks-manager.js';
 
-let list = new Tasks();
+const list = new Tasks();
 list.loader();
 
-const adder = document.getElementById("new-task");
+const adder = document.getElementById('new-task');
 
-adder.addEventListener("keypress", (e)=> {
+adder.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && adder.value) {
-      list.add(adder.value);
-    }
+    list.add(adder.value);
+  }
 });

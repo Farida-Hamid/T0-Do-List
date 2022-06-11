@@ -1,5 +1,5 @@
 export default class Tasks {
-  constructor () {
+  constructor() {
     this.list = this.get();
   }
 
@@ -28,8 +28,8 @@ export default class Tasks {
     // Load tasks
     const listContainer = document.querySelector('#list');
     listContainer.innerHTML = '';
-    
-    if(this.list.length > 0) {
+
+    if (this.list.length > 0) {
       this.list.forEach((task) => this.display(task));
     }
 
@@ -53,7 +53,7 @@ export default class Tasks {
       });
     });
   }
-  
+
   add = (value) => {
     const task = {
       description: value,
