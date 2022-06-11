@@ -9,5 +9,6 @@ const adder = document.getElementById('new-task');
 adder.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && adder.value) {
     list.add(adder.value);
+    adder.value = '';
   }
 });
