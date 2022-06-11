@@ -49,7 +49,7 @@ export default class Tasks {
     };
     this.list.push(task);
     localStorage.setItem('memory', JSON.stringify(this.list));
-    this.display(task);
+    this.loader();
   }
 
   delete = (index) => {
