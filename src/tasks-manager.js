@@ -19,12 +19,13 @@ export default class Tasks {
     listContainer.innerHTML += `
     <li>
       <input type="checkbox" id="done">
-      <p>${task.description}</p>
+      <input class="content" type="text" value="${task.description}">
       <button class="delete" onclick="delete(task)">X</button>
     </li>`;
   }
 
   loader = () => {
+    // Load tasks
     const listContainer = document.querySelector('#list');
     listContainer.innerHTML = '';
     
@@ -32,11 +33,23 @@ export default class Tasks {
       this.list.forEach((task) => this.display(task));
     }
 
+    // Delete a task
     const del = document.querySelectorAll('.delete');
 
     del.forEach((task, index) => {
       task.addEventListener('click', () => {
         this.delete(index);
+      });
+    });
+
+    // Edit tasks
+    const edit = document.querySelectorAll('.content');
+    edit.forEach((text, index) => {
+      text.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && text.value) {
+          this.list[index].description = text.value;
+          localStorage.setItem('memory', JSON.stringify(this.list));
+        }
       });
     });
   }
