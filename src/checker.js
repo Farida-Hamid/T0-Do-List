@@ -3,7 +3,7 @@ export const completeTask = (list) => {
   boxs.forEach((box, index) => {
     box.addEventListener('click', () => {
       list[index].completed = !list[index].completed;
-      console.log('changed', index, 'to', list[index].completed);
+      localStorage.setItem('memory', JSON.stringify(list));
     });
   });
 }
