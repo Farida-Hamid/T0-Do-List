@@ -25,6 +25,9 @@ export default class Tasks {
   }
 
   loader = () => {
+    const listContainer = document.querySelector('#list');
+    listContainer.innerHTML = '';
+    
     if(this.list.length > 0) {
       this.list.forEach((task) => this.display(task));
     }
@@ -50,14 +53,13 @@ export default class Tasks {
   }
 
   delete = (index) => {
-    console.log('in delete')
     this.list.splice(index, 1);
     for (let i = 0; i < this.list.length; i += 1) {
       this.list[i].index = i;
       console.log("task", this.list[i], i, this.list[i].index);
     }
     localStorage.setItem('memory', JSON.stringify(this.list));
-    // e.target.parentElement.remove();
-    // this.loader();
+
+    this.loader();
   }
 }

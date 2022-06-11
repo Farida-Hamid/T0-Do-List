@@ -28,8 +28,6 @@ const adder = document.getElementById("new-task");
 adder.addEventListener("keypress", (e)=> {
 
   if (e.key === 'Enter' && adder.value) {
-      console.log('added', adder.value);
       list.add(adder.value);
-      // list.display(task);
     }
 });
