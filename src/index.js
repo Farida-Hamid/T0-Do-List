@@ -1,33 +1,14 @@
 import './style.css';
+import Tasks from './tasks-manager.js';
 
-const list = [
-  {
-    description: 'Wake up at 6',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Pray',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Make breakfast',
-    completed: false,
-    index: 3,
-  },
-];
+const list = new Tasks();
+list.loader();
 
-const listContainer = document.querySelector('#list');
+const adder = document.getElementById('new-task');
 
-const loader = () => {
-  list.forEach((task) => {
-    listContainer.innerHTML += `
-    <li>
-      <input type="checkbox">
-      <p>${task.description}</p>
-    </li>`;
-  });
-};
-
-loader();
+adder.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter' && adder.value) {
+    list.add(adder.value);
+    adder.value = '';
+  }
+});

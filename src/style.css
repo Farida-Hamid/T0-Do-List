@@ -10,7 +10,7 @@ main {
   padding: 20px;
 }
 
-h2 {
+#new-task {
   font-weight: 100;
   color: gray;
   font-style: italic;
@@ -20,10 +20,16 @@ li {
   display: flex;
   gap: 20px;
   padding: 10px;
+  align-items: center;
 }
 
-p {
+input {
+  border: none;
+}
+
+.content {
   margin: 0;
+  width: 90%;
 }
 
 button {
@@ -31,4 +37,8 @@ button {
   border: none;
   padding: 10px;
   color: darkgray;
+}
+
+.delete {
+  width: fit-content;
 }
