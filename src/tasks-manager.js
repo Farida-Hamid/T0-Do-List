@@ -1,3 +1,5 @@
+import { completeTask, clearScreen } from './checker.js';
+
 export default class Tasks {
   constructor() {
     this.list = this.get();
@@ -19,7 +21,7 @@ export default class Tasks {
     listContainer.innerHTML += `
     <li>
       <input type="checkbox" id="done">
-      <input class="content" type="text" value="${task.description}">
+      <input class="content change" type="text" value="${task.description}">
       <button class="delete" onclick="delete(task)">X</button>
     </li>`;
   }
@@ -52,6 +54,8 @@ export default class Tasks {
         }
       });
     });
+    completeTask(this.list);
+    clearScreen(this.list);
   }
 
   add = (value) => {
