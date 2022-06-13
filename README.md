@@ -12,6 +12,10 @@
 - JavaScript
 - Webpack
 
+## Live Demo
+
+[Click here](https://farida-hamid.github.io/T0-Do-List/) to find the website.
+
 ## Getting Started
 
 To get a local clone this repository. You can run the project by double clicking on the file [dist/index.html].
