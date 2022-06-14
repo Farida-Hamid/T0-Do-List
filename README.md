@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Click here](https://farida-hamid.github.io/T0-Do-List/) to find the website.
+[Click here](https://farida-hamid.github.io/T0-Do-List/dist) to find the website.
 
 ## Getting Started
 
