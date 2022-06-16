@@ -1,4 +1,4 @@
-import { add, deleter } from 'src\__mocks__\tasks-manager.js';
+import { add, deleter } from './__mocks__/tasks-manager.js';
 
 jest.mock('./tasks-manager');
 
