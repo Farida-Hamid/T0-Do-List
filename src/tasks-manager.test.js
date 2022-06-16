@@ -1,5 +1,5 @@
+import { add, deleter,} from './_mocks_/tasks-manager.js';
 jest.mock('./tasks-manager');
-import { add, deleter } from './tasks-manager.js';
 
 describe('Test Project 1:', () => {
   test('Checks adding:', () => {
