@@ -27,7 +27,7 @@ describe('Test Project 1:', () => {
   });
 
   test('check Editing:', () => {
-    let list = [
+    const list = [
       { description: 'I was added', completed: false, index: 0 },
       { description: 'I was added too', completed: false, index: 1 },
     ];
@@ -37,7 +37,7 @@ describe('Test Project 1:', () => {
   });
 
   test('mark completed:', () => {
-    let list = [
+    const list = [
       { description: 'I am to be completed', completed: true, index: 0 },
       { description: 'I was added', completed: false, index: 1 },
       { description: 'I was added too', completed: false, index: 2 },
