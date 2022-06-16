@@ -58,7 +58,7 @@ export default class Tasks {
     clearScreen(this.list);
   }
 
-  add = (value) => {
+  add(value) {
     const task = {
       description: value,
       completed: false,

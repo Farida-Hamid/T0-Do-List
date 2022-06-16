@@ -1,3 +1,7 @@
-test('see if it runs', () => {
-  expect((1)).toBe(1);
+jest.mock('./tasks-manager');
+const add = require('./tasks-manager');
+
+test('checks:', () => {
+  list = []
+  expect(add(list, 'I was added')).toStrictEqual([{description: 'I was added', completed: false, index: 0}]);
 });
