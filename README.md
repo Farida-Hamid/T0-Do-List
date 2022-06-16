@@ -50,6 +50,11 @@ run `npm run start`.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/farida-hamid)
 - GitHub: [@Farida-Hamid](https://github.com/Farida-Hamid)
 
+👤 **Shaheer**
+
+- GitHub: [@ShaheerCH](https://github.com/ShaheerCH)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
