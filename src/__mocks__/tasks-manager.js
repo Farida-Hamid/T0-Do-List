@@ -9,4 +9,13 @@ function add(list = [], value) {
   return list;
 }
 
-module.exports = add;
+function deleter(list, index) {
+  list.splice(index, 1);
+  for (let i = 0; i < list.length; i += 1) {
+    list[i].index = i;
+  }
+
+  return list
+}
+
+module.exports = { add, deleter };
