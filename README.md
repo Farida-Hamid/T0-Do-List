@@ -1,16 +1,23 @@
+ `HTML` `CSS` `JS` `ES6` `WEBPACK` `NPM` `LINTERS` <br>
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Todo List Project
 
 > "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I built a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
-
 ## Built With
 
-- HTML
-- CSS
-- JavaScript
+- HTML/CSS/JS-Es6
+- NPM
 - Webpack
+- ES Modules
+- Linters
+- Github actions
+
+## Source Code
+
+[Source Code](https://farida-hamid.github.io/T0-Do-List)
 
 ## Live Demo
 
@@ -18,18 +25,23 @@
 
 ## Getting Started
 
-To get a local clone this repository. You can run the project by double clicking on the file [dist/index.html].
+**Clone the repo into your local machine.**
+
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Install webpack. Use any platform with html, css, and JavaScript. To buils this project, I used Visual Studio.
+NPM should be installed
 
-## 🤝 Contributing
+### Install
 
-Contributions, issues, and feature requests are welcome!
+run `npm install` in the project folder.
 
-Feel free to check the [issues page](../../issues/).
+### Usage
 
+open `index.html`.
+
+run `npm run start`.
 
 ## Authors
 
@@ -38,10 +50,21 @@ Feel free to check the [issues page](../../issues/).
 - LinkedIn: [LinkedIn](https://linkedin.com/in/farida-hamid)
 - GitHub: [@Farida-Hamid](https://github.com/Farida-Hamid)
 
+👤 **Shaheer**
+
+- GitHub: [@ShaheerCH](https://github.com/ShaheerCH)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Farida-Hamid/todo-list/issues).
+
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a [⭐️](https://github.com/Farida-Hamid/todo-list) if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+This project is [MIT](LICENSE) licensed.
