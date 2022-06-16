@@ -16,4 +16,4 @@ function deleter(list, index) {
   return list;
 }
 
-module.exports = { add, deleter };
+export { add, deleter };
