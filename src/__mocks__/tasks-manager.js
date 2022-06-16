@@ -13,7 +13,7 @@ function deleter(list, index) {
   for (let i = 0; i < list.length; i += 1) {
     list[i].index = i;
   }
-  return list
+  return list;
 }
 
 module.exports = { add, deleter };
