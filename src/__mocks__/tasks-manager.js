@@ -16,4 +16,24 @@ function deleter(list, index) {
   return list;
 }
 
-export { add, deleter };
+function edit(list, index, value) {
+  list[index].description = value;
+  return list;
+}
+
+function completed(list, index) {
+  list[index].completed = true;
+  return list;
+}
+
+function deleteAll(list) {
+  for (let i = 0; i < list.length; i += 1) {
+    if ((list[i].completed = 'true')) {
+      list.splice(i, 1);
+      list[i].index = i;
+    }
+  }
+  return list;
+}
+
+export { add, deleter, edit, completed, deleteAll };
