@@ -27,7 +27,7 @@ function completed(list, index) {
 }
 
 function deleteAll(list) {
-  for (let i = 0; i < list.length; i += 1) {
+  for (let i = 0; i < list.length; i += 1) { // eslint-disable-line
     if (list[i].completed = 'true') {
       list.splice(i, 1);
       list[i].index = i;
@@ -36,10 +36,10 @@ function deleteAll(list) {
   return list;
 }
 
-export { 
-        add, 
-        deleter,
-        edit,
-        completed,
-        deleteAll
-       };
+export {
+  add,
+  deleter,
+  edit,
+  completed,
+  deleteAll,
+};
