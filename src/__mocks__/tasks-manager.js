@@ -36,4 +36,10 @@ function deleteAll(list) {
   return list;
 }
 
-export { add, deleter, edit, completed, deleteAll };
+export { 
+        add, 
+        deleter,
+        edit,
+        completed,
+        deleteAll
+       };
