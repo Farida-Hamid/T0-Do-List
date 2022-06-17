@@ -25,7 +25,9 @@ describe('Test Project 1:', () => {
       { description: 'I was added too', completed: false, index: 0 },
     ]);
   });
+});
 
+describe('Test Project 2:', () => {
   test('check Editing:', () => {
     const list = [
       { description: 'I was added', completed: false, index: 0 },
