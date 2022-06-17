@@ -27,11 +27,9 @@ function completed(list, index) {
 }
 
 function deleteAll(list) {
-  for (let i = 0; i < list.length; i += 1) {
-    if (list[i].completed) {
-      list.splice(i, 1);
-      list[i].index = i;
-    }
+  list = list.filter((l) => l.completed === false);
+  for (let i = 0; i < list.length; i++) {
+    list[i].index = i;
   }
   return list;
 }
