@@ -28,7 +28,7 @@ function completed(list, index) {
 
 function deleteAll(list) {
   list = list.filter((l) => l.completed === false);
-  for (let i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i += 1) {
     list[i].index = i;
   }
   return list;
