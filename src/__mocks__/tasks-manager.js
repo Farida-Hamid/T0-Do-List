@@ -16,4 +16,28 @@ function deleter(list, index) {
   return list;
 }
 
-export { add, deleter };
+function edit(list, index, value) {
+  list[index].description = value;
+  return list;
+}
+
+function completed(list, index) {
+  list[index].completed = true;
+  return list;
+}
+
+function deleteAll(list) {
+  list = list.filter((l) => l.completed === false);
+  for (let i = 0; i < list.length; i += 1) {
+    list[i].index = i;
+  }
+  return list;
+}
+
+export {
+  add,
+  deleter,
+  edit,
+  completed,
+  deleteAll,
+};
